@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 v.setText(" ");
                 String s1=e1.getText().toString();
                 String s2=e2.getText().toString();
-                if(s1.length()==0 || s2.length()==0)
+                if(s1.length()==0 || s2.length()==0 || s1.equals(".") || s2.equals("."))
                 {
-                    Toast.makeText(MainActivity.this, "Enter values..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Enter valid values..", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     double ad = Double.parseDouble(e1.getText().toString()) + Double.parseDouble(e2.getText().toString());
@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 v.setText(" ");
                 String s1=e1.getText().toString();
                 String s2=e2.getText().toString();
-                if(s1.length()==0 || s2.length()==0)
+                if(s1.length()==0 || s2.length()==0 || s1.equals(".") || s2.equals("."))
                 {
-                    Toast.makeText(MainActivity.this, "Enter values..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Enter valid values..", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     double sub = Double.parseDouble(e1.getText().toString()) - Double.parseDouble(e2.getText().toString());
@@ -68,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 v.setText(" ");
                 String s1=e1.getText().toString();
                 String s2=e2.getText().toString();
-                if(s1.length()==0 || s2.length()==0)
+                if(s1.length()==0 || s2.length()==0 || s1.equals(".") || s2.equals("."))
                 {
-                    Toast.makeText(MainActivity.this, "Enter values..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Enter valid values..", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     double mult = Double.parseDouble(e1.getText().toString())*Double.parseDouble(e2.getText().toString());
@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
                 v.setText(" ");
-                if(s1.length()==0 || s2.length()==0)
+                if(s1.length()==0 || s2.length()==0 || s1.equals(".") || s2.equals("."))
                 {
-                    Toast.makeText(MainActivity.this, "Enter values..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Enter valid values..", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     double n1 = Double.parseDouble(s1);
